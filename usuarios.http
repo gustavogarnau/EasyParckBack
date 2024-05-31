@@ -6,11 +6,11 @@ POST  http://localhost:4000/api/signup/
 Content-Type:  application/json
  
 {
-    "id":"1",
-    "cedula":"1003402797",
-    "nombre":"Gustavo",
-    "apellido":"Garnau Arrieta",
-    "correo":"ggarnauarrieta@gmail.com",
+    "id":"2",
+    "cedula":"1003402799",
+    "nombre":"Gusi",
+    "apellido":"Garnau ",
+    "correo":"ggarnau@gmail.com",
     "telefono":"3024481093",
     "password":"123456789",
     "direccion":"endumundolopez",
@@ -24,4 +24,51 @@ Content-Type: application/json
 {
     "correo":"ggarnauarrieta@gmail.com",
     "password":"123456789"
+}
+
+###
+GET http://localhost:4000/api/cars/2 HTTP/1.1
+Content-Type:  application/json
+
+
+
+###
+POST http://localhost:4000/api/cars/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "placa": "hhhddhdajb",
+    "caracteristicas": "ddhhabhjds",
+    "usuario": "2"
+}
+
+###
+GET http://localhost:4000/api/parking_lot HTTP/1.1
+Content-Type:  application/json
+
+
+
+###
+POST http://localhost:4000/api/parking_lot HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":"2",
+    "cant_espacios":"12",
+    "precio":"4500"
+}
+
+###
+GET http://localhost:4000/api/user_parking HTTP/1.1
+Content-Type:  application/json
+
+
+
+###
+POST http://localhost:4000/api/user_parking HTTP/1.1
+Content-Type: application/json
+
+{
+    "parqueaderoId": 2,
+    "usuarioId": 1
 }

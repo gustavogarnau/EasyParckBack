@@ -13,6 +13,9 @@ app.use(express.json());
 app.use("/api/signup", require("./routes/signup"));
 app.use("/api/login", require("./routes/login"));
 app.use("/api/validation_email", require ("./routes/validation_email"));
+app.use("/api/cars", require ("./routes/cars"));
+app.use("/api/parking_lot", require ("./routes/parking_lot"));
+app.use("/api/user_parking", require ("./routes/user_parking"));
 
 
 app.get("/", (req, res) => {

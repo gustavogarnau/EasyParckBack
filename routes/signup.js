@@ -63,7 +63,7 @@ router.post("/", async (req, res) => {
 
       Atentamente,
 
-      El equipo de FENIX
+      El equipo de Easy-Park
     `;
 
     res.status(200).json(jsonResponse(200, { message: "Usuario creado exitosamente", usuario }));
